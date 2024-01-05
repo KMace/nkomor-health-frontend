@@ -18,7 +18,7 @@ function App() {
         <Sidebar />
         <Insurance />
       </Box>
-      <Footer />
+      {/*<Footer />*/}
     </Box>
   )
 }

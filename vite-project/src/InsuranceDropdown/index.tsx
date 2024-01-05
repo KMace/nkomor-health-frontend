@@ -1,4 +1,4 @@
-import { Box, FormControl, InputLabel, ListSubheader, MenuItem, Select, SelectChangeEvent, Typography } from "@mui/material";
+import { FormControl, InputLabel, ListSubheader, MenuItem, Select, SelectChangeEvent } from "@mui/material";
 import { useState } from "react";
 
 function InsuranceDropdown() {

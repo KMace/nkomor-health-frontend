@@ -2,7 +2,6 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import { useState } from 'react';
-import { Typography } from '@mui/material';
 
 const steps = ['Choose an insurance', 'Choose a plan', 'Plan summary', 'Payment'];
 
@@ -55,11 +54,6 @@ function InsuranceStepper() {
           const labelProps: {
             optional?: React.ReactNode;
           } = {};
-          if (isStepOptional(index)) {
-            labelProps.optional = (
-              <Typography variant="caption">Optional</Typography>
-            );
-          }
           if (isStepSkipped(index)) {
             stepProps.completed = false;
           }
