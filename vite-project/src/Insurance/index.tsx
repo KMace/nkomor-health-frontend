@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import InsuranceStepper from "../InsuranceStepper";
+import InsuranceDropdown from "../InsuranceDropdown";
 
 function Insurance() {
   return (
@@ -11,6 +12,7 @@ function Insurance() {
           <Typography variant='h5'>No insurance yet</Typography>
           <Button sx={{'color':'white', 'backgroundColor':'#007E7C', 'textTransform': 'none', width:'100%', 'maxWidth':'30%'}}>Explore insurance</Button>
         </Box>
+        <InsuranceDropdown />
       </Box>
     </>
   )
