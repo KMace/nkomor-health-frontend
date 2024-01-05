@@ -6,6 +6,7 @@ import Footer from './Footer'
 import Sidebar from './Sidebar'
 import { Box, Typography } from '@mui/material'
 import Header from './Header'
+import Insurance from './Insurance'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,7 @@ function App() {
       <Header />
       <Box sx={{'display':'flex'}}>
         <Sidebar />
-        <Typography>Content here</Typography>
+        <Insurance />
       </Box>
       <Footer />
     </Box>
