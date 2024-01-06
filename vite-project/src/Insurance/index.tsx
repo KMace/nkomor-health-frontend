@@ -1,12 +1,12 @@
 import { Box, Button, Typography } from "@mui/material";
-import InsuranceStepper from "../InsuranceStepper";
-import InsuranceDropdown from "../InsuranceDropdown";
-import InsurancePlans from "../InsurancePlans";
+import InsuranceStepper from "./InsuranceStepper";
+import InsuranceDropdown from "./InsuranceDropdown";
+import InsurancePlans from "./InsurancePlans";
 
 function Insurance() {
   return (
     <>
-      <Box sx={{width:'100%', 'padding': '20px 75px'}}>
+      <Box sx={{width:'100%'}}>
         <InsuranceStepper />
         <Typography variant='h2'>Insurance</Typography>
         <Box sx={{'display': 'flex', 'alignItems':'center', 'flexDirection':'column'}}>

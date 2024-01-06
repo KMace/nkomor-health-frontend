@@ -1,5 +1,5 @@
 import { Box, Button, List, ListItem, ListItemText, Paper, Typography } from "@mui/material";
-import Shield from "../../assets/shield.png";
+import Shield from "../../../assets/shield.png";
 
 function SinglePlan() {
   return (

@@ -1,22 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import Header from './Header'
 import Insurance from './Insurance'
+import Payment from './Payment'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Box width={'100%'}>
       <Header />
       <Box sx={{'display':'flex'}}>
         <Sidebar />
-        <Insurance />
+        <Box sx={{'backgroundColor':'#F6F6F6', 'padding': '20px 75px'}}>
+          <Insurance />
+          <Payment />
+        </Box>
       </Box>
       {/*<Footer />*/}
     </Box>
