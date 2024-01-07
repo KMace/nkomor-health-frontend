@@ -5,6 +5,7 @@ import insurance from '../assets/insurance.png';
 import labservices from '../assets/labservices.png';
 import notifications from '../assets/notifications.png';
 import profile from '../assets/profile.png';
+import information from '../assets/information.png';
 
 function Sidebar() {
   return (
@@ -45,6 +46,12 @@ function Sidebar() {
             <img width='30px' src={profile} className="profile" alt="Profile icon" />
           </ListItemIcon>
           <ListItemText>Profile</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <img width='30px' src={information} className="help" alt="Help icon" />
+          </ListItemIcon>
+          <ListItemText>Need help?</ListItemText>
         </MenuItem>
       </MenuList>
     </Paper>
