@@ -10,9 +10,9 @@ function App() {
   return (
     <Box width={'100%'}>
       <Header />
-      <Box sx={{'display':'flex'}}>
+      <Box sx={{'display':'flex', 'backgroundColor':'#F6F6F6'}}>
         <Sidebar />
-        <Box sx={{'backgroundColor':'#F6F6F6', 'padding': '20px 75px'}}>
+        <Box sx={{'padding': '20px 75px'}}>
           <Insurance />
           <Payment />
         </Box>

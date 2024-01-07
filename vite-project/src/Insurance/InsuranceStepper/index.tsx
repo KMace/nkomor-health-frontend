@@ -48,22 +48,22 @@ function InsuranceStepper() {
   };
 
   return (
-    <Stepper activeStep={activeStep}>
-        {steps.map((label, index) => {
-          const stepProps: { completed?: boolean } = {};
-          const labelProps: {
-            optional?: React.ReactNode;
-          } = {};
-          if (isStepSkipped(index)) {
-            stepProps.completed = false;
-          }
-          return (
-            <Step key={label} {...stepProps}>
-              <StepLabel {...labelProps}>{label}</StepLabel>
-            </Step>
-          );
-        })}
-      </Stepper>
+    <Stepper activeStep={activeStep} alternativeLabel>
+      {steps.map((label, index) => {
+        const stepProps: { completed?: boolean } = {};
+        const labelProps: {
+          optional?: React.ReactNode;
+        } = {};
+        if (isStepSkipped(index)) {
+          stepProps.completed = false;
+        }
+        return (
+          <Step key={label} {...stepProps}>
+            <StepLabel {...labelProps}>{label}</StepLabel>
+          </Step>
+        );
+      })}
+    </Stepper>
   )
 }
 
