@@ -4,7 +4,6 @@ import Sidebar from './Sidebar'
 import { Box } from '@mui/material'
 import Header from './Header'
 import Insurance from './Insurance'
-import Payment from './Payment'
 
 function App() {
   return (
@@ -12,9 +11,8 @@ function App() {
       <Header />
       <Box sx={{'display':'flex', 'backgroundColor':'#F6F6F6'}}>
         <Sidebar />
-        <Box sx={{'padding': '20px 75px'}}>
+        <Box sx={{'width':'100%','padding': '50px 75px'}}>
           <Insurance />
-          <Payment />
         </Box>
       </Box>
       {/*<Footer />*/}
