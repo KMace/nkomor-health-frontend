@@ -1,12 +1,15 @@
-import { Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Success from "../../assets/tick.png";
+import { NavLink } from "react-router-dom";
 
 function SuccessfulPurchase() {
   return (
-    <>
+    <Box sx={{'display':'flex', 'flexDirection': 'column', 'justfiyContent': 'center'}}>
       <img src={Success} width='500px'/>
-      <Typography variant='h4'>Purchase successful</Typography>
-    </>
+      <Typography variant='h4'>Purchase complete</Typography>
+      <Typography variant='h6'>You have successfully purchased health insurance! Thank you for your purchase.</Typography>
+      <Button component={NavLink} to={'/insurance'}>Go to profile</Button>
+    </Box>
   )
 }
 

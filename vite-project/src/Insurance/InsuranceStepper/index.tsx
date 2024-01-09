@@ -6,6 +6,7 @@ import { Box, Button, Typography } from '@mui/material';
 import InsurancePlans from '../InsurancePlans';
 import InsuranceDropdown from '../InsuranceDropdown';
 import Payment from '../../Payment';
+import SuccessfulPurchase from '../SuccessfulPurchase';
 
 const steps = ['Choose an insurance', 'Choose a plan', 'Plan summary', 'Payment'];
 
@@ -85,9 +86,7 @@ function InsuranceStepper() {
         })}
       </Stepper>
       {activeStep === steps.length ? (
-          <div>
-            <Typography variant="h5">All steps completed</Typography>
-          </div>
+          <SuccessfulPurchase />
         ) : (
           <div>
             <StepContent stepIndex={activeStep} />

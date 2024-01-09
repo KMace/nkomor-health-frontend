@@ -4,6 +4,7 @@ import Sidebar from './Sidebar'
 import { Box } from '@mui/material'
 import Header from './Header'
 import Insurance from './Insurance'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
@@ -12,10 +13,10 @@ function App() {
       <Box sx={{'display':'flex', 'backgroundColor':'#F6F6F6'}}>
         <Sidebar />
         <Box sx={{'width':'100%','padding': '50px 75px'}}>
-          <Insurance />
+          <Outlet />
         </Box>
       </Box>
-      {/*<Footer />*/}
+      <Footer />
     </Box>
   )
 }
