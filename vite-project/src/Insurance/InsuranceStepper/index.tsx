@@ -69,7 +69,7 @@ function InsuranceStepper() {
 
   return (
     <Box>
-      <Stepper activeStep={activeStep} alternativeLabel>
+      <Stepper activeStep={activeStep} alternativeLabel sx={{'marginBottom':'20px'}}>
         {steps.map((label, index) => {
           const stepProps: { completed?: boolean } = {};
           const labelProps: {
@@ -86,19 +86,21 @@ function InsuranceStepper() {
         })}
       </Stepper>
       {activeStep === steps.length ? (
-          <SuccessfulPurchase />
+          <Box sx={{'display':'flex', 'justifyContent':'center'}}>
+            <SuccessfulPurchase />
+          </Box>
         ) : (
-          <div>
+          <Box>
             <StepContent stepIndex={activeStep} />
-            <div>
+            <Box sx={{'margin':'20px 0'}}>
               <Button disabled={activeStep === 0} onClick={handleBack}>
                 Back
               </Button>
               <Button variant="contained" color="primary" onClick={handleNext}>
                 {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
               </Button>
-            </div>
-          </div>
+            </Box>
+          </Box>
         )}
     </Box>
   )

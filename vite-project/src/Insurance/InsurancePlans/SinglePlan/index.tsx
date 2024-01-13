@@ -3,7 +3,7 @@ import Shield from "../../../assets/shield.png";
 
 function SinglePlan() {
   return (
-    <Paper sx={{'padding': 4, 'maxWidth':'250px'}}>
+    <Paper square sx={{'padding': 4, 'maxWidth':'250px', 'borderRadius':'10px'}}>
       <Box sx={{'display':'flex', 'flexDirection':'column', 'alignItems':'center', 'textAlign': 'center'}}>
         <Typography variant='h4' fontWeight='bold' color='#1A9C9A' sx={{'overflowWrap': 'break-word'}}>B-Health Single & Joint</Typography>
         <Box sx={{'margin': '15px 0'}}>

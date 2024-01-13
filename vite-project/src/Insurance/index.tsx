@@ -1,5 +1,5 @@
 import { Box, Button, Paper, Typography } from "@mui/material";
-import InsuranceStepper from "./InsuranceStepper";
+import { NavLink } from "react-router-dom";
 
 function Insurance() {
   return (
@@ -8,10 +8,19 @@ function Insurance() {
         <Typography variant='h3'>Insurance</Typography>
         <Box sx={{'display': 'flex', 'alignItems':'center', 'flexDirection':'column'}}>
           <Typography variant='h6'>No insurance yet</Typography>
-          <Button sx={{'margin':'20px 0 30px 0', 'color':'white', 'backgroundColor':'#007E7C', 'textTransform': 'none', width:'100%', 'maxWidth':'30%'}}>Explore insurance</Button>
+          <Button 
+            component={NavLink}
+            to={'/exploreinsurance'}
+            sx={{
+            'margin':'20px 0 30px 0', 
+            'color':'white', 
+            'backgroundColor':'#007E7C', 
+            'textTransform': 'none', 
+            'width':'100%', 
+            'maxWidth':'30%'}}
+          >Explore insurance</Button>
         </Box>
       </Paper>
-      <InsuranceStepper />
     </Box>
   )
 }
