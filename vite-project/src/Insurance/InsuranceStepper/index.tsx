@@ -7,6 +7,7 @@ import InsurancePlans from '../InsurancePlans';
 import InsuranceDropdown from '../InsuranceDropdown';
 import Payment from '../../Payment';
 import SuccessfulPurchase from '../SuccessfulPurchase';
+import InsurancePlanSummary from '../InsurancePlanSummary';
 
 const steps = ['Choose an insurance', 'Choose a plan', 'Plan summary', 'Payment'];
 
@@ -17,7 +18,7 @@ const StepContent = (stepIndex: any) => {
     case 1:
       return <InsurancePlans />;
     case 2:
-      return <Typography variant="h5">Content for Step 3 - plan summary</Typography>;
+      return <InsurancePlanSummary />;
     case 3:
       return <Payment />;
     default:

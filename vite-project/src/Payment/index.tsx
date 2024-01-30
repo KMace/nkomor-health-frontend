@@ -119,7 +119,13 @@ function Payment() {
               </Grid>
             </Grid>
           </Paper>
-          <Button sx={{'color':'white', 'backgroundColor':'#007E7C', 'textTransform': 'none', 'width':'100%'}}>Pay Now</Button>
+          <Button sx={{
+            'color':'white', 
+            'backgroundColor':'#007E7C', 
+            'textTransform': 'none', 
+            'width':'100%',
+            'marginTop': '20px'
+          }}>Pay Now</Button>
         </Grid>
       </Grid>
     </Box>
