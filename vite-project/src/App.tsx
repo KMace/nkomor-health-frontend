@@ -3,10 +3,11 @@ import Sidebar from './Sidebar'
 import { Box } from '@mui/material'
 import Header from './Header'
 import { Outlet } from 'react-router-dom'
+import Footer from './Footer'
 
 function App() {
   return (
-    <Box sx={{'width':'100%', 'minHeight':'100vh', 'backgroundColor':'#F6F6F6'}}>
+    <Box sx={{'minHeight':'100vh', 'backgroundColor':'#F6F6F6'}}>
       <Header />
       <Box sx={{'display':'flex'}}>
         <Sidebar />
@@ -14,7 +15,7 @@ function App() {
           <Outlet />
         </Box>
       </Box>
-      {/*<Footer />*/}
+      <Footer />
     </Box>
   )
 }
