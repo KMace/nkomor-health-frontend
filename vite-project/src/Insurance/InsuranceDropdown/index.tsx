@@ -2,10 +2,10 @@ import { FormControl, InputLabel, ListSubheader, MenuItem, Select, SelectChangeE
 import { useState } from "react";
 
 function InsuranceDropdown() {
-  const [age, setAge] = useState('');
+  const [insurance, setInsurance] = useState('');
 
   const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value as string);
+    setInsurance(event.target.value as string);
   };
 
   return (
@@ -14,7 +14,7 @@ function InsuranceDropdown() {
       <Select
         labelId="choose-insurance-company-label"
         id="choose-insurance-company-select"
-        value={age}
+        value={insurance}
         label="Choose an insurance company"
         onChange={handleChange}
       >
